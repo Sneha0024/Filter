@@ -2,64 +2,41 @@ let products = {
     data: [
       {
         productName: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, optio! Similique odio deserunt eius dolorum doloremque provident optio minima maxime hic, ducimus corporis minus in, suscipit voluptate nobis odit doloribus!",
-        category: "Bottomwear",
-        price: "Pre registration",
+        category: "Engineering",
+        registration: "Pre registration",
         image: "circle.png",
         pName: "Course1",
         pDate: "22 week course, 4 hrs per day",
-        price1: "March18 - August19",
+        months: "March18 - August19",
       },
       {
         productName: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, optio! Similique odio deserunt eius dolorum doloremque provident optio minima maxime hic, ducimus corporis minus in, suscipit voluptate nobis odit doloribus!",
-        category: "Bottomwear",
-        price: "Pre registration",
+        category: "Engineering",
+        registration: "Pre registration",
         image: "circle.png",
         pName: "Course2",
         pDate: "22 week course, 3 hrs per day",
-        price1: "March18 - August19",
+        months: "March18 - August19",
       },
       {
         productName: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, optio! Similique odio deserunt eius dolorum doloremque provident optio minima maxime hic, ducimus corporis minus in, suscipit voluptate nobis odit doloribus!",
-        category: "Jacket",
-        price: "Pre registration",
+        category: "Mathematics",
+        registration: "Pre registration",
         image: "circle.png",
         pName: "Course3",
         pDate: "5 week course, 2 hrs per day",
-        price1: "August22 - May27",
+        months: "August22 - May27",
       },
       {
         productName: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, optio! Similique odio deserunt eius dolorum doloremque provident optio minima maxime hic, ducimus corporis minus in, suscipit voluptate nobis odit doloribus!",
-        category: "Topwear",
-        price: "Pre registration",
+        category: "Computer",
+        registration: "Pre registration",
         image: "circle.png",
         pName: "Course4 - Hello World",
         pDate: "5 week course, 2 hrs per day",
-        price1: "August22 - May27",
+        months: "August22 - May27",
             },
-      // {
-      //   productName: "Black Leather Jacket",
-      //   category: "Jacket",
-      //   price: "129",
-      //   image: "black-leather-jacket.jpg",
-      // },
-      // {
-      //   productName: "Stylish Pink Trousers",
-      //   category: "Bottomwear",
-      //   price: "89",
-      //   image: "pink-trousers.jpg",
-      // },
-      // {
-      //   productName: "Brown Men's Jacket",
-      //   category: "Jacket",
-      //   price: "189",
-      //   image: "brown-jacket.jpg",
-      // },
-      // {
-      //   productName: "Comfy Gray Pants",
-      //   category: "Bottomwear",
-      //   price: "49",
-      //   image: "comfy-gray-pants.jpg",
-      // },
+      
     ],
   };
   
@@ -89,18 +66,18 @@ let products = {
     name.classList.add("product-name");
     name.innerText = i.productName.toUpperCase();
     container.appendChild(name);
-    //price
-    let price = document.createElement("h6");
-    price.innerText = i.price;
-    container.appendChild(price);
+    //registration
+    let registration = document.createElement("h6");
+    registration.innerText = i.registration;
+    container.appendChild(registration);
   
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
-    //price1
-    let price1 = document.createElement("h6");
-    price1.classList.add("price1");
-    price1.innerText = i.price1;
-    container.appendChild(price1);
+    //months
+    let months = document.createElement("h6");
+    months.classList.add("months");
+    months.innerText = i.months;
+    container.appendChild(months);
     //date
     let date1 = document.createElement("div");
     date1.classList.add("date");
